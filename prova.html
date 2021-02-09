@@ -4,9 +4,144 @@
 
     <link rel="icon" type="image/ico" href="favicon.ico"/>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <link href="stylesheet" type="text/css" src="css/timeline.css"></link>
+    <script type="text/javascript" src="js/timeline.js"></script>
+
     <title></title>
   </head>
   <body>
-asdsadas
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">3A Info</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chi Siamo</a>
+          </li>
+
+
+
+          <!-- parte a cascata
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
+            -->
+        </ul>
+         <a href="https://google.com"> <img  class="form-inline my-2 my-lg-0" src="bandiera.png" width="50" height="25"/></a>
+          <a href="https://google.com" style="padding-left: 10px"> <img  class="form-inline my-2 my-lg-0" src="img/bandiera inglesepng.png" widht="50" height="25" /></a>
+      </div>
+    </nav>
+
+
+    <div class="body-wrap">
+    <!-- # component starts -->
+      <div class="pres-timeline" id="this-timeline">
+    <!-- ###   -->
+    <!--   <div class="periods-section"> -->
+        <div class="periods-container">
+          <section class="period-single" period="period1">
+            <h4 class="year">181x-181x</h4>
+            <h2 class="title">1 Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloremque, laboriosam officia facere eligendi quam reiciendis, rem explicabo dolores tenetur libero minus, facilis quibusdam. Consectetur amet beatae fuga, architecto magnam.</p>
+          </section>
+          <section class="period-single" period="period2">
+            <h4 class="year">182x-182x</h4>
+            <h2 class="title">2 Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloremque, laboriosam officia facere eligendi quam reiciendis, rem explicabo dolores tenetur libero minus, facilis quibusdam. Consectetur amet beatae fuga, architecto magnam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloremque, laboriosam officia facere eligendi quam reiciendis, rem explicabo dolores tenetur libero minus, facilis quibusdam. Consectetur amet beatae fuga, architecto magnam.</p>
+          </section>
+          <section class="period-single" period="period3">
+            <h4 class="year">183x-183x</h4>
+            <h2 class="title">3 Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloremque, laboriosam officia facere eligendi quam reiciendis, rem explicabo dolores tenetur libero minus, facilis quibusdam. Consectetur amet beatae fuga, architecto magnam.</p>
+          </section>
+          <div class="btn-back"></div>
+          <div class="btn-next"></div>
+        </div>
+    <!--   </div> -->
+    <!-- ### -->
+    <!--   <div class="timeline-section"> -->
+        <div class="timeline-container">
+          <!--     # timeline graphic place holder - fill with js -->
+          <div class="timeline"></div>
+
+          <div class="btn-back"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M11.828 15l7.89-7.89-2.83-2.828L6.283 14.89l.11.11-.11.11L16.89 25.72l2.828-2.83"/></svg></div>
+          <div class="btn-next"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M18.172 14.718l-7.89-7.89L13.112 4l10.606 10.607-.11.11.11.11-10.608 10.61-2.828-2.83 7.89-7.89"/></svg></div>
+        </div>
+    <!--   </div> -->
+    <!-- ### -->
+    <!--   <div class="cards-section"> -->
+        <div class="cards-container">
+          <section class="card-single active" period="period1">
+            <h4 class="year">1816</h4>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+            <div class="content">
+              <img src="https://ununsplash.imgix.net/photo-1421284621639-884f4129b61d?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vitae sint dolore, officia esse! A recusandae nemo illum rem eos iusto repellendus, voluptatibus tempora nulla voluptatem officia inventore ea modi.</p>
+            </div>
+          </section>
+          <section class="card-single" period="period1">
+            <h4 class="year">1816</h4>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+            <div class="content">
+              <img src="https://ununsplash.imgix.net/photo-1421284621639-884f4129b61d?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vitae sint dolore, officia esse! A recusandae nemo illum rem eos iusto repellendus, voluptatibus tempora nulla voluptatem officia inventore ea modi.</p>
+            </div>
+          </section>
+          <section class="card-single" period="period2">
+            <h4 class="year">1816</h4>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempora blanditiis ut voluptas nisi labore quos iste totam obcaecati modi rerum iusto, voluptate odio commodi ratione amet illum dicta accusamus, ipsum ea vero neque enim, recusandae dignissimos? Quae ea aspernatur dolor atque, ipsum repellendus. Repudiandae culpa magnam, doloribus exercitationem illo impedit quasi officia, veniam vero molestiae sunt dolorem, excepturi ullam dicta sed amet provident ut soluta pariatur magni! Fugiat eveniet suscipit praesentium culpa aperiam ab nulla, exercitationem atque quod, labore, qui quaerat nihil nam laborum aliquam! Nesciunt dignissimos eaque impedit ex, architecto minima ad, temporibus rem possimus consequatur doloremque, fuga?</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vitae sint dolore, officia esse! A recusandae nemo illum rem eos iusto repellendus, voluptatibus tempora nulla voluptatem officia inventore ea modi.</p>
+            </div>
+          </section>
+          <section class="card-single" period="period1">
+            <h4 class="year">1816</h4>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vitae sint dolore, officia esse! A recusandae nemo illum rem eos iusto repellendus, voluptatibus tempora nulla voluptatem officia inventore ea modi.</p>
+            </div>
+          </section>
+          <section class="card-single" period="period3">
+            <h4 class="year">1816</h4>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+            <div class="content">
+              <img src="https://ununsplash.imgix.net/photo-1421284621639-884f4129b61d?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vitae sint dolore, officia esse! A recusandae nemo illum rem eos iusto repellendus, voluptatibus tempora nulla voluptatem officia inventore ea modi.</p>
+            </div>
+          </section>
+        </div>
+    <!--   </div> -->
+    <!-- ###   -->
+      </div>
+    <!-- # component ends -->
+    </div>
+
+
   </body>
 </html>
