@@ -151,11 +151,339 @@ Inizialmente il telegrafo veniva usato per collegare Parigi con il resto della F
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
+<style>
+   .containerdestra {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100%;
+}
+
+ .the-arrowdestra {
+	 width: 1px;
+	 transition: all 0.2s;
+}
+ .the-arrowdestra.-leftdestra {
+	 position: absolute;
+	 top: 60%;
+	 left: 0;
+}
+ .the-arrowdestra.-leftdestra > .shaftdestra {
+	 width: 0;
+	 background-color: #4c4c4c;
+}
+ .the-arrowdestra.-leftdestra > .shaftdestra:before, .the-arrowdestra.-leftdestra > .shaftdestra:after {
+	 width: 0;
+	 background-color: #4c4c4c;
+}
+ .the-arrowdestra.-leftdestra > .shaftdestra:before {
+	 transform: rotate(0);
+}
+ .the-arrowdestra.-leftdestra > .shaftdestra:after {
+	 transform: rotate(0);
+}
+ .the-arrowdestra.-rightdestra {
+	 top: 3px;
+}
+ .the-arrowdestra.-rightdestra > .shaftdestra {
+	 width: 1px;
+	 transition-delay: 0.2s;
+}
+ .the-arrowdestra.-rightdestra > .shaftdestra:before, .the-arrowdestra.-rightdestra > .shaftdestra:after {
+	 width: 8px;
+	 transition-delay: 0.3s;
+	 transition: all 0.5s;
+}
+ .the-arrowdestra.-rightdestra > .shaftdestra:before {
+	 transform: rotate(40deg);
+}
+ .the-arrowdestra.-rightdestra > .shaftdestra:after {
+	 transform: rotate(-40deg);
+}
+ .the-arrowdestra > .shaftdestra {
+	 background-color: #4c4c4c;
+	 display: block;
+	 height: 1px;
+	 position: relative;
+	 transition: all 0.2s;
+	 transition-delay: 0;
+	 will-change: transform;
+}
+ .the-arrowdestra > .shaftdestra:before, .the-arrowdestra > .shaftdestra:after {
+	 background-color: #4c4c4c;
+	 content: '';
+	 display: block;
+	 height: 1px;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 transition: all 0.2s;
+	 transition-delay: 0;
+}
+ .the-arrowdestra > .shaftdestra:before {
+	 transform-origin: top right;
+}
+ .the-arrowdestra > .shaftdestra:after {
+	 transform-origin: bottom right;
+}
+ .animated-arrowdestra {
+	 display: inline-block;
+	 color: #4c4c4c;
+	 font-size: 1.25em;
+	 font-style: italic;
+	 text-decoration: none;
+	 position: relative;
+	 transition: all 0.2s;
+}
+ .animated-arrowdestra:hover {
+	 color: #808080;
+}
+ .animated-arrowdestra:hover > .the-arrowdestra.-leftdestra > .shaftdestra {
+	 width: 64px;
+	 transition-delay: 0.1s;
+	 background-color: #808080;
+}
+ .animated-arrowdestra:hover > .the-arrowdestra.-leftdestra > .shaftdestra:before, .animated-arrowdestra:hover > .the-arrowdestra.-left > .shaftdestra:after {
+	 width: 8px;
+	 transition-delay: 0.1s;
+	 background-color: #808080;
+}
+ .animated-arrowdestra:hover > .the-arrowdestra.-leftdestra > .shafdestrat:before {
+	 transform: rotate(40deg);
+}
+ .animated-arrowdestra:hover > .the-arrowdestra.-leftdestra > .shaftdestra:after {
+	 transform: rotate(-40deg);
+}
+ .animated-arrowdestra:hover > .maindestra {
+	 transform: translateX(17px);
+	 transform: translateX(80px);
+}
+ .animated-arrowdestra:hover > .maindestra > .the-arrowdestra.-rightdestra > .shaftdestra {
+	 width: 0;
+	 transform: translateX(200%);
+	 transition-delay: 0;
+}
+ .animated-arrowdestra:hover > .maindestra > .the-arrowdestra.-rightdestra > .shaftdestra:before, .animated-arrowdestra:hover > .maindestra > .the-arrowdestra.-rightdestra > .shaftdestra:after {
+	 width: 0;
+	 transition-delay: 0;
+	 transition: all 0.1s;
+}
+ .animated-arrowdestra:hover > .maindestra > .the-arrowdestra.-rightdestra > .shaftdestra:before {
+	 transform: rotate(0);
+}
+ .animated-arrowdestra:hover > .maindestra > .the-arrowdestra.-rightdestra > .shaftdestra:after {
+	 transform: rotate(0);
+}
+ .animated-arrowdestra > .maindestra {
+	 display: flex;
+	 align-items: center;
+	 transition: all 0.2s;
+}
+ .animated-arrowdestra > .maindestra > .textdestra {
+	 margin: 0 16px 0 0;
+	 line-height: 1;
+}
+ .animated-arrowdestra > .maindestra > .the-arrowdestra {
+	 position: relative;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100%;
+}
+ .the-arrow {
+	 width: 1px;
+	 transition: all 0.2s;
+}
+ .the-arrow.-left {
+	 position: absolute;
+	 top: 60%;
+	 left: 0;
+}
+ .the-arrow.-left > .shaft {
+	 width: 0;
+	 background-color: #4c4c4c;
+}
+ .the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+	 width: 0;
+	 background-color: #4c4c4c;
+}
+ .the-arrow.-left > .shaft:before {
+	 transform: rotate(0);
+}
+ .the-arrow.-left > .shaft:after {
+	 transform: rotate(0);
+}
+ .the-arrow.-right {
+	 top: 3px;
+}
+ .the-arrow.-right > .shaft {
+	 width: 1px;
+	 transition-delay: 0.2s;
+}
+ .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+	 width: 8px;
+	 transition-delay: 0.3s;
+	 transition: all 0.5s;
+}
+ .the-arrow.-right > .shaft:before {
+	 transform: rotate(-40deg);
+}
+ .the-arrow.-right > .shaft:after {
+	 transform: rotate(40deg);
+}
+ .the-arrow > .shaft {
+	 background-color: #4c4c4c;
+	 display: block;
+	 height: 1px;
+	 position: relative;
+	 transition: all 0.2s;
+	 transition-delay: 0;
+	 will-change: transform;
+}
+ .the-arrow > .shaft:before, .the-arrow > .shaft:after {
+	 background-color: #4c4c4c;
+	 content: '';
+	 display: block;
+	 height: 1px;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 transition: all 0.2s;
+	 transition-delay: 0;
+}
+ .the-arrow > .shaft:before {
+	 transform-origin: top left;
+}
+ .the-arrow > .shaft:after {
+	 transform-origin: bottom left;
+}
+ .animated-arrow {
+	 display: inline-block;
+	 color: #4c4c4c;
+	 font-size: 1.25em;
+	 font-style: italic;
+	 text-decoration: none;
+	 position: relative;
+	 transition: all 0.2s;
+}
+ .animated-arrow:hover {
+	 color: #808080;
+}
+ .animated-arrow:hover > .the-arrow.-left > .shaft {
+	 width: 64px;
+	 transition-delay: 0.1s;
+	 background-color: #808080;
+}
+ .animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	 width: 8px;
+	 transition-delay: 0.1s;
+	 background-color: #808080;
+}
+ .animated-arrow:hover > .the-arrow.-left > .shaft:before {
+	 transform: rotate(-40deg);
+}
+ .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	 transform: rotate(40deg);
+}
+ .animated-arrow:hover > .main {
+	 transform: translateX(-17px);
+	 transform: translateX(-80px);
+}
+ .animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+	 width: 0;
+	 transform: translateX(-200%);
+	 transition-delay: 0;
+}
+ .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	 width: 0;
+	 transition-delay: 0;
+	 transition: all 0.1s;
+}
+ .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+	 transform: rotate(0);
+}
+ .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	 transform: rotate(0);
+}
+ .animated-arrow > .main {
+	 display: flex;
+	 align-items: center;
+	 transition: all 0.2s;
+}
+ .animated-arrow > .main > .text {
+	 margin: 0 16px 0 0;
+	 line-height: 1;
+}
+ .animated-arrow > .main > .the-arrow {
+	 position: relative;
+}
+ 
+ 
+</style>
+
+
+<div class="containerdestra">
+
+      <a class="animated-arrowdestra" href="pagina3.html">
+        <span class="the-arrowdestra -leftdestra">
+          <span class="shaftdestra"></span>
+        </span>
+        <span class="maindestra">
+          <span class="textdestra" style="font-size:35px">
+            1808 - Meucci
+          </span>
+          <span class="the-arrowdestra -rightdestra">
+            <span class="shaftdestra"></span>
+          </span>
+        </span>
+      </a>
+
+</div>
+
+
+
+<div class="container">
+
+      <a class="animated-arrow" href="https://google.com">
+        <span class="the-arrow -left">
+          <span class="shaft"></span>
+        </span>
+        <span class="main">
+          <span class="text">
+            Explore More
+          </span>
+          <span class="the-arrow -right">
+            <span class="shaft"></span>
+          </span>
+        </span>
+      </a>
+
+</div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+
+  <center>
+    <footer  style="background-color: lightblue";>
+      <font color="000000" size="5px" style="font-family:helvetica">  © Copyright 2021 </font>
+    </footer>
+  </center>
   </body>
 
 </html>
