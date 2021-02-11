@@ -124,59 +124,64 @@
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<Style>
-    button {
-        background: transparent;
-        -webkit-appearance: none;
-        border: 0;
-        outline: 0;
-    }
 
-    svg {
-        padding: 13px;
-    }
-
-    .arrow {
+<style>
+    .arrow-left {
         cursor: pointer;
+        height: 120px;
+        left: 50%;
         position: absolute;
         top: 50%;
-        margin-top: -45px;
-        margin-left: -35px;
-        width: 70px;
-        height: 90px;
+        transform: translateX(-50%) translateY(-50%);
+        transition: transform 0.1s;
+        width: 80px;
+    }
+    .arrow-left-bottom, .arrow-left-top {
+        background-color: #a2a2a2;
+        height: 4px;
+        left: -3px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+    .arrow-left-bottom:after, .arrow-left-top:after {
+        background-color: #000000;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: all 0.15s;
+    }
+    .arrow-left-bottom {
+        transform: rotate(135deg);
+        transform-origin: top right;
+    }
+    .arrow-left-bottom:after {
+        left: 100%;
+        right: 0;
+        transition-delay: 0s;
+    }
+    .arrow-left-top {
+        transform: rotate(-135deg);
+        transform-origin: top right;
+    }
+    .arrow-left-top:after {
+        left: 0;
+        right: 100%;
+        transition-delay: 0.15s;
+    }
+    .arrow-left:hover .arrow-left-bottom:after {
+        left: 0;
+        transition-delay: 0.15s;
+    }
+    .arrow-left:hover .arrow-left-top:after {
+        right: 0;
+        transition-delay: 0s;
+    }
+    .arrow-left:active {
+        transform: translateX(-50%) translateY(-50%) scale(0.9);
     }
 
-    .left {
-        left: 10%;
-    }
-
-    .right {
-        left: 90%;
-    }
-
-    .left:hover polyline,
-    .left:focus polyline {
-        stroke-width: 3;
-    }
-
-    .left:active polyline {
-        stroke-width: 6;
-        transition: all 100ms ease-in-out;
-    }
-
-    .right:hover polyline,
-    .right:focus polyline {
-        stroke-width: 3;
-    }
-
-    .right:active polyline {
-        stroke-width: 6;
-        transition: all 100ms ease-in-out;
-    }
-
-    polyline {
-        transition: all 250ms ease-in-out;
-    }
 
     .piedipagina {
         position: relative;
@@ -188,28 +193,101 @@
         left: 0;
     }
 
+    /* classi per il posizionamento nella pagina */
+    .left {
+        left: 10%;
+
+    }
+
+    .right {
+        left: 90%;
+    }
+
+
+
+    .arrow-right {
+        cursor: pointer;
+        height: 120px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        transition: transform 0.1s;
+        width: 80px;
+    }
+    .arrow-right-top, .arrow-right-bottom {
+        background-color: #a2a2a2;
+        height: 4px;
+        left: -5px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+    .arrow-right-top:after, .arrow-right-bottom:after {
+        background-color: #000000;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: all 0.15s;
+    }
+    .arrow-right-top {
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+    }
+    .arrow-right-top:after {
+        left: 100%;
+        right: 0;
+        transition-delay: 0s;
+    }
+    .arrow-right-bottom {
+        transform: rotate(-45deg);
+        transform-origin: top right;
+    }
+    .arrow-right-bottom:after {
+        left: 0;
+        right: 100%;
+        transition-delay: 0.15s;
+    }
+    .arrow-right:hover .arrow-right-top:after {
+        left: 0;
+        transition-delay: 0.15s;
+    }
+    .arrow-right:hover .arrow-right-bottom:after {
+        right: 0;
+        transition-delay: 0s;
+    }
+    .arrow-right:active {
+        transform: translateX(-50%) translateY(-50%) scale(0.9);
+    }
+
+
 </style>
 
-<div class=piedipagina>
-    <button class="arrow left">
-        <a href="pagina9.html">
-            <svg height="80px" viewBox="0 0 50 80" width="60px" xml:space="preserve">
-    <polyline fill="none" points="
-	45.63,75.8 0.375,38.087 45.63,0.375 " stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-</svg>
-        </a>
-        <p style="font-family:caveat; font-size:30px">Relazione Precedente</p>
-    </button>
-    <button class="arrow right">
-        <a href="pagina11.html">
-            <svg height="80px" viewBox="0 0 50 80" width="60px" xml:space="preserve">
-    <polyline fill="none" points="
-	0.375,0.375 45.63,38.087 0.375,75.8 " stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-</svg>
-        </a>
-        <p style="font-family:caveat; font-size:30px">Relazione Successiva</p>
-    </button>
+
+
+<div class="piedipagina">
+
+    <!-- freccia di sinistra -->
+    <div class="arrow-left left">
+        <div class="arrow-left-top"></div>
+        <div class="arrow-left-bottom"></div>
+    </div>
+
+
+    <!-- freccia di destra -->
+    <div class="arrow-right" style="left: 90%">
+        <div class="arrow-right-top"></div>
+        <div class="arrow-right-bottom"></div>
+    </div>
+
 </div>
+
+
+
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
