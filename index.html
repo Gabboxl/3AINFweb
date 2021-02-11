@@ -1,520 +1,581 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
-  <head>
+<html dir="ltr" lang="it">
+<head>
 
-    <link rel="icon" type="image/ico" href="favicon.png"/>
+    <link href="favicon.png" rel="icon" type="image/ico"/>
     <meta charset="utf-8">
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--  <link rel="stylesheet" href="./css/timeline.css"> -->
-<link rel="stylesheet" href="./css/time2.css">
-<link rel="stylesheet" href="./css/animfoto.css"> <!-- animazioni immagini -->
-
-
-<style>
-html {
-
-  scroll-behavior: smooth;
-}
+    <!--  <link rel="stylesheet" href="./css/timeline.css"> -->
+    <link href="./css/time2.css" rel="stylesheet">
+    <link href="./css/animfoto.css" rel="stylesheet"> <!-- animazioni immagini -->
 
 
-</style>
+    <style>
+        html {
+
+            scroll-behavior: smooth;
+        }
+
+
+    </style>
 
 
 </head>
-  <body style="background-color:#ffffff">
+<body style="background-color:#ffffff">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family:Noto Sans KR; width:100%; min-width: 430px"> <!-- sticky-top ? -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+     style="font-family:Noto Sans KR; width:100%; min-width: 430px"> <!-- sticky-top ? -->
 
-      <a class="navbar-brand" href="#" style="padding-left: 30px;">
-        <img src="./img/ms-icon-310x310.png" style="width: 50px; height:50px;" ></img>
+    <a class="navbar-brand" href="#" style="padding-left: 30px;">
+        <img src="./img/ms-icon-310x310.png" style="width: 50px; height:50px;"></img>
         La storia dell'Informatica
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
-      </button>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
 
 
-          <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" ><b>Argomenti</b></a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="relazioni/pagina1.html">1623 - Pascal</a>
-              <a class="dropdown-item" href="relazioni/pagina2.html">1763 - Comunicazione a distanza</a>
-              <a class="dropdown-item" href="relazioni/pagina3.html">1808 - Meucci</a>
-              <a class="dropdown-item" href="relazioni/pagina4.html">1815 - Ada Lovelace</a>
-              <a class="dropdown-item" href="relazioni/pagina5.html">1860/1870 - Schede Perforate</a>
-              <a class="dropdown-item" href="relazioni/pagina6.html">1874 - Guglielmo Marconi</a>
-              <a class="dropdown-item" href="relazioni/pagina7.html">1906 - Grace Hopper</a>
-              <a class="dropdown-item" href="relazioni/pagina8.html">1912 - Alan Turing</a>
-              <a class="dropdown-item" href="relazioni/pagina9.html">1939 - HP</a>
-              <a class="dropdown-item" href="relazioni/pagina10.html">1943 - Eniac</a>
-              <a class="dropdown-item" href="relazioni/pagina11.html">1955 - Steve Jobs</a>
-              <a class="dropdown-item" href="relazioni/pagina12.html">1958 - Circuiti integrati</a>
-              <a class="dropdown-item" href="relazioni/pagina13.html">1958 - Explorer 1</a>
-              <a class="dropdown-item" href="relazioni/pagina14.html">Primi anni '80 - La corsa nello spazio</a>
-              <a class="dropdown-item" href="relazioni/pagina15.html">2012-2021 - Hyperloop</a>
-              <a class="dropdown-item" href="relazioni/pagina16.html">FUTURO... - Neuralink</a>
-              <!-- <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#three">three</a> -->
-            </div>
-          </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                   role="button"><b>Argomenti</b></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="relazioni/pagina1.html">1623 - Pascal</a>
+                    <a class="dropdown-item" href="relazioni/pagina2.html">1763 - Comunicazione a distanza</a>
+                    <a class="dropdown-item" href="relazioni/pagina3.html">1808 - Meucci</a>
+                    <a class="dropdown-item" href="relazioni/pagina4.html">1815 - Ada Lovelace</a>
+                    <a class="dropdown-item" href="relazioni/pagina5.html">1860/1870 - Schede Perforate</a>
+                    <a class="dropdown-item" href="relazioni/pagina6.html">1874 - Guglielmo Marconi</a>
+                    <a class="dropdown-item" href="relazioni/pagina7.html">1906 - Grace Hopper</a>
+                    <a class="dropdown-item" href="relazioni/pagina8.html">1912 - Alan Turing</a>
+                    <a class="dropdown-item" href="relazioni/pagina9.html">1939 - HP</a>
+                    <a class="dropdown-item" href="relazioni/pagina10.html">1943 - Eniac</a>
+                    <a class="dropdown-item" href="relazioni/pagina11.html">1955 - Steve Jobs</a>
+                    <a class="dropdown-item" href="relazioni/pagina12.html">1958 - Circuiti integrati</a>
+                    <a class="dropdown-item" href="relazioni/pagina13.html">1958 - Explorer 1</a>
+                    <a class="dropdown-item" href="relazioni/pagina14.html">Primi anni '80 - La corsa nello spazio</a>
+                    <a class="dropdown-item" href="relazioni/pagina15.html">2012-2021 - Hyperloop</a>
+                    <a class="dropdown-item" href="relazioni/pagina16.html">FUTURO... - Neuralink</a>
+                    <!-- <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a> -->
+                </div>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="chisiamo.html">Chi siamo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="crediti.html">Crediti</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chisiamo.html">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="crediti.html">Crediti</a>
+            </li>
 
 
         </ul>
-         <a href="https://google.com"> <img  class="form-inline my-2 my-lg-0" src="img/bandieraita.png" width="50" height="25"/></a>
-          <a href="https://google.com" style="padding-left: 10px"> <img  class="form-inline my-2 my-lg-0" src="img/bandiera inglesepng.png" widht="50" height="25" /></a>
-      </div>
-    </nav>
-
+        <a href="https://google.com"> <img class="form-inline my-2 my-lg-0" height="25" src="img/bandieraita.png"
+                                           width="50"/></a>
+        <a href="https://google.com" style="padding-left: 10px"> <img class="form-inline my-2 my-lg-0"
+                                                                      height="25" src="img/bandiera inglesepng.png"
+                                                                      widht="50"/></a>
+    </div>
+</nav>
 
 
 <center><img src="./img/sfondosfumato3.png" style="width: 60%; height: 60%;"></img></center>
 
 
-
 <style>
-  .arrow{
-    position:relative;
-    top: -60px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.arrow span{
-    display: block;
-    transform: rotate(0deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(0deg) translate(0px,-20px);
+    .arrow {
+        position: relative;
+        top: -60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    50%{
-        opacity: 1;
+
+    .arrow span {
+        display: block;
+        transform: rotate(0deg);
+        margin: -10px;
+        animation: animate 2s infinite;
     }
-    100%{
-        opacity: 0;
-        transform: rotate(0deg) translate(0px,20px);
+
+    .arrow span:nth-child(2) {
+        animation-delay: -0.2s;
     }
-}
+
+    .arrow span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: rotate(0deg) translate(0px, -20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(0deg) translate(0px, 20px);
+        }
+    }
 </style>
 
 
-<center><a class="btn btn-primary" href="#introduzione" role="button" style="position: relative; top: -120px; background-color:white; color: black;"> 
-  <b> Clicca qui per scoprire la storia </b>
+<center><a class="btn btn-primary" href="#introduzione" role="button"
+           style="position: relative; top: -120px; background-color:white; color: black;">
+    <b> Clicca qui per scoprire la storia </b>
 </a>
 
-<div class="arrow">
-  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
-  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
-  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
+    <div class="arrow">
+        <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
+        <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
+        <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
 
-</div>
+    </div>
 </center>
 
 
-            <div class="container">
-                
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" id="introduzione" style="margin-top: 2%;">
-                  <h1>Introduzione al sito</h1>
-                  <p> Su questo sito si parla della storia dell'Informatica: di tutte le figure importanti e delle principali invenzioni del passato e per finire c'è un accenno anche al futuro per coloro che sono affascinati da qual aspetto. <br><br> Qui di seguito possiamo trovare una linea del tempo con tutte le cose descritte in precedenza e per ognuno basta cliccare sulla foto per essere reindirizzati alla pagina specifica. <br><br> Speriamo possa essere interessante per tutti viaggiare tra questi anni di storia.
-                  </p>
+<div class="container">
 
-                </div>
+    <div class="shadow-sm p-3 mb-5 bg-white rounded" id="introduzione" style="margin-top: 2%;">
+        <h1>Introduzione al sito</h1>
+        <p> Su questo sito si parla della storia dell'Informatica: di tutte le figure importanti e delle principali
+            invenzioni del passato e per finire c'è un accenno anche al futuro per coloro che sono affascinati da qual
+            aspetto. <br><br> Qui di seguito possiamo trovare una linea del tempo con tutte le cose descritte in
+            precedenza e per ognuno basta cliccare sulla foto per essere reindirizzati alla pagina specifica. <br><br>
+            Speriamo possa essere interessante per tutti viaggiare tra questi anni di storia.
+        </p>
 
-                <br><br><br>
+    </div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-timeline9">
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle " >
-                                      <span >
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline9">
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle ">
+                                      <span>
                                       
                                         <div class="anim">
-                                          <a href="relazioni/pagina1.html"  ><img src="./img/pascal.png"  style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                          <a href="relazioni/pagina1.html"><img src="./img/pascal.png"
+                                                                                style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
                                         </div>
 
                                       </span>
-                                    </div>
-                                    <div class="content">
-                                        <span class="year" style="font-family:Noto Sans KR;" >1623</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Pascal</h4>
-                                        <p class="description" style="font-family:Noto Sans KR">
-                                          <b>Blaise Pascal è stato un matematico, fisico e filosofo francese nato il 19 Giugno 1963 a Clermont Ferrand. È stato l’inventore della Pascalina.</b>
-                                          </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                        <a href="./relazioni/pagina2.html"><img src="./img/comadistanza.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                      </div>
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1763</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Comunicazione a distanza</h4>
-                                        <p class="description">
-                                          <b> Sarà trattato l'argomento della trasmissione delle informazioni a distanza basata su una tecnologia conosciuta con il nome di telegrafo, la sua evoluzione e chi l’ha inventato.  </b></p> </b>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina3.html"><img src="./img/meucci.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-                                    
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1808</span>
-                                        <h4 class="title"style="font-family:caveat; font-size:40px" > Meucci</h4>
-                                        <p class="description" >
-                                          <b> Meucci nacque a Firenze nel 1808, riuscì a realizzare il primo apparecchio telefonico nel 1854.
-                                            Egli costruì diversi prototipi di telefono che sottopose alla società statunitense Western
-                                            Union telegraph company chiedendo dei finanziamenti. </b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina4.html"><img src="./img/ada_lovelace_finale.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1815</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Ada Lovelace </h4>
-                                        <p class="description">
-                                          <b>Ada, nata nel 1815, viene oggi conosciuta come la prima persona ad aver scritto un algoritmo. Aveva infatti scritto un algortimo in grado di poter risolvere un elementto dei numeri di Bernoulli     </b></p> </b>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                          
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina5.html"><img src="./img/schede-perforate.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1860/1870</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Schede Perforate</h4>
-                                        <p class="description">
-                                          <b>Le schede perforate vennero inventate negli anni 60 e 70, furono inizialmente impiegate per la programmazione delle macchine.
-                                          </b></p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina6.html"><img src="./img/marconi.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1874</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Guglielmo Marconi </h4>
-                                        <p class="description">
-                                          <b>Guglielmo Marconi, nato il 25 Aprile 1874 è colui che ha inventato il sistema di telegrafia
-                                          senza fili via onde radio.
-                                          Marconi inventò il Wireless cioè una comunicazione tra dispositivi elettronici senza uso di cavi.</b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina7.html"><img src="./img/grace.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1906</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Grace Hopper </h4>
-                                        <p class="description">
-                                          <b>Grace Murray Hopper nasce a New York il 9 dicembre 1906.
-                                          Inizia a lavorare allo sviluppo dei programmi per il computer “Mark I”, uno tra i primi calcolatori
-                                          della storia.
-                                          Riesce a sviluppare il primo compilatore della storia e trova la risoluzione ai bug.
-                                          Infine nasce il Flow-matic che è alla base del Cobol.</b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina8.html"><img src="./img/alan_turning.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1912</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Alan Turing</h4>
-                                        <p class="description">
-                                          <b>Turing nacque a Londra il 23 giugno 1912, creò la macchina di Turing che è un modello
-                                            ideale di una macchina per calcoli capace di risolvere algoritmi.
-                                            La seconda invenzione è il test cioè in una ricerca di criteri attraverso il quale si può
-                                            distinguere un essere umano da una macchina attraverso delle risposte.</b>
-                                          </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina9.html"><img src="./img/inventori_hp.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1939</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">HP</h4>
-                                        <p class="description">
-                                          <b>Hewlett-Packard è una delle principali e più importanti multinazionali informatiche. Oggi l’azienda viene riconosciuta da tutti con l’acronimo Hp. Fu fondata nel 1939 da Bill Hewlett e David Packard. Questa azienda fu la prima a creare un computer portatile.</b>
-                                            </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina10.html"><img src="./img/eniac.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-                                      
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1943</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Eniac</h4>
-                                        <p class="description">
-                                          <b>L’Eniac ènato il 1943 ed è considerato il primo computer elettronico general purpose della
-                                            storia.
-                                            Il calcolatore doveva essere capace di risolvere principalmente i problemi di calcolo balistico per
-                                            il lancio dei proiettili d’artiglieria. Realizzare l’eniac costò quasi 500.000 $</b>
-                                          </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina11.html"><img src="./img/steve_jobs.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1955</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Steve Jobs </h4>
-                                        <p class="description">
-                                        <b>  Steve Jobs è stato un imprenditore, informatico e inventore statunitense nato il 24 Febbraio
-                                          1955.
-                                          Lui è stato il fondatore di Apple.</b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina12.html"><img src="./img/circuito_integrato.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1958</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Circuiti integrati </h4>
-                                        <p class="description">
-                                          <b>Un circuito integrato, in elettronica digitale, è un circuito elettronico miniaturizzato
-                                          L'ideazione del circuito integrato si deve a Jack St. Clair Kilby, che nel 1958 ne costruì il
-                                          primo esemplare.</b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina13.html"><img src="./img/explorer.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></A>
-                                      </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">1958</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Explorer 1</h4>
-                                        <p class="description">
-                                      <b>Il 28 gennaio 1958 la JPL (Jet Propulsion Laboratory) ha mandato nello spazio il primo satellite americano, Explorer 1. Grazie a questo satellite si deve la scoperta della cintura di Van Allen, una cintura di particelle cariche intrappolate nello spazio dal campo magnetico terrestre.</b>
-
-                                      </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina14.html"><img src="./img/corsa_nello_spazio_finale.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></A>
-                                      </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">Primi anni '80</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">La corsa nello spazio </h4>
-                                        <p class="description">
-                                         <b>Dalla corsa allo spazio con le missioni Apollo, ai nuovi razzi Falcon 9 della SpaceX di Elon Musk ci sono stati molteplici cambiamenti, e nuove tecnologie sono state scoperte.Dall’AGC al Falcon 9 in mezzo c’è stato un cambiamento radicale</b>
-                                      </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <a href="./relazioni/pagina15.html"><img src="./img/hyperloop.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
-                                    </div>
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">2012-2021</span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Hyperloop</h4>
-                                        <p class="description">
-                                          <b>HyperLoop è un treno a levitazione magnetica che viaggia alla velocità di oltre mille chilometri orari, questa idea fu lanciata da Elon Musk nel 2012. Questa idea non è stata ancora completata al 100% ma fu collaudata nel 2020 facendo viaggiare due persone.</b>
-                                              </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                      
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="circle"><span>
-
-                                      <div class="anim">
-                                      <img src="./img/Neuralink_Musk_720.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img>
-                                    </div>
-
-
-                                    </span></div>
-                                    <div class="content">
-                                        <span class="year">FUTURO ... </span>
-                                        <h4 class="title" style="font-family:caveat; font-size:40px">Neuralink</h4>
-                                        <p class="description">
-                                          <b>Neuralink è un'azienda di Elon Musk, Essa è un'azienda che si occupa di Neurotecnologie, attualmente lo scopo è quello di riuscire a impiantare nel cervello umano un bottone in modo da poter controllare gli impulsi del cervello e riuscire a decifrare, ma lo scopo in futuro è riuscire a far comunicare il cervello con esso in modo da poter scambiare dati e render così l’intera conoscenza umana a portata di tutti.</b>
-                                        </p>
-                                        <div class="icon"><span></span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+                        </div>
+                        <div class="content">
+                            <span class="year" style="font-family:Noto Sans KR;">1623</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Pascal</h4>
+                            <p class="description" style="font-family:Noto Sans KR">
+                                <b>Blaise Pascal è stato un matematico, fisico e filosofo francese nato il 19 Giugno
+                                    1963 a Clermont Ferrand. È stato l’inventore della Pascalina.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
                         </div>
                     </div>
                 </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                        <a href="./relazioni/pagina2.html"><img src="./img/comadistanza.png"
+                                                                                style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                      </div>
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1763</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Comunicazione a distanza</h4>
+                            <p class="description">
+                                <b> Sarà trattato l'argomento della trasmissione delle informazioni a distanza basata su
+                                    una tecnologia conosciuta con il nome di telegrafo, la sua evoluzione e chi l’ha
+                                    inventato. </b></p> </b>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina3.html"><img src="./img/meucci.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+                                    
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1808</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px"> Meucci</h4>
+                            <p class="description">
+                                <b> Meucci nacque a Firenze nel 1808, riuscì a realizzare il primo apparecchio
+                                    telefonico nel 1854.
+                                    Egli costruì diversi prototipi di telefono che sottopose alla società statunitense
+                                    Western
+                                    Union telegraph company chiedendo dei finanziamenti. </b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina4.html"><img src="./img/ada_lovelace_finale.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1815</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Ada Lovelace </h4>
+                            <p class="description">
+                                <b>Ada, nata nel 1815, viene oggi conosciuta come la prima persona ad aver scritto un
+                                    algoritmo. Aveva infatti scritto un algortimo in grado di poter risolvere un
+                                    elementto dei numeri di Bernoulli </b></p> </b>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina5.html"><img src="./img/schede-perforate.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1860/1870</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Schede Perforate</h4>
+                            <p class="description">
+                                <b>Le schede perforate vennero inventate negli anni 60 e 70, furono inizialmente
+                                    impiegate per la programmazione delle macchine.
+                                </b></p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina6.html"><img src="./img/marconi.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1874</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Guglielmo Marconi </h4>
+                            <p class="description">
+                                <b>Guglielmo Marconi, nato il 25 Aprile 1874 è colui che ha inventato il sistema di
+                                    telegrafia
+                                    senza fili via onde radio.
+                                    Marconi inventò il Wireless cioè una comunicazione tra dispositivi elettronici senza
+                                    uso di cavi.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina7.html"><img src="./img/grace.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1906</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Grace Hopper </h4>
+                            <p class="description">
+                                <b>Grace Murray Hopper nasce a New York il 9 dicembre 1906.
+                                    Inizia a lavorare allo sviluppo dei programmi per il computer “Mark I”, uno tra i
+                                    primi calcolatori
+                                    della storia.
+                                    Riesce a sviluppare il primo compilatore della storia e trova la risoluzione ai bug.
+                                    Infine nasce il Flow-matic che è alla base del Cobol.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina8.html"><img src="./img/alan_turning.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1912</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Alan Turing</h4>
+                            <p class="description">
+                                <b>Turing nacque a Londra il 23 giugno 1912, creò la macchina di Turing che è un modello
+                                    ideale di una macchina per calcoli capace di risolvere algoritmi.
+                                    La seconda invenzione è il test cioè in una ricerca di criteri attraverso il quale
+                                    si può
+                                    distinguere un essere umano da una macchina attraverso delle risposte.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina9.html"><img src="./img/inventori_hp.png"
+                                                                              style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1939</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">HP</h4>
+                            <p class="description">
+                                <b>Hewlett-Packard è una delle principali e più importanti multinazionali informatiche.
+                                    Oggi l’azienda viene riconosciuta da tutti con l’acronimo Hp. Fu fondata nel 1939 da
+                                    Bill Hewlett e David Packard. Questa azienda fu la prima a creare un computer
+                                    portatile.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina10.html"><img src="./img/eniac.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+                                      
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1943</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Eniac</h4>
+                            <p class="description">
+                                <b>L’Eniac ènato il 1943 ed è considerato il primo computer elettronico general purpose
+                                    della
+                                    storia.
+                                    Il calcolatore doveva essere capace di risolvere principalmente i problemi di
+                                    calcolo balistico per
+                                    il lancio dei proiettili d’artiglieria. Realizzare l’eniac costò quasi 500.000 $</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina11.html"><img src="./img/steve_jobs.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1955</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Steve Jobs </h4>
+                            <p class="description">
+                                <b> Steve Jobs è stato un imprenditore, informatico e inventore statunitense nato il 24
+                                    Febbraio
+                                    1955.
+                                    Lui è stato il fondatore di Apple.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina12.html"><img src="./img/circuito_integrato.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1958</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Circuiti integrati </h4>
+                            <p class="description">
+                                <b>Un circuito integrato, in elettronica digitale, è un circuito elettronico
+                                    miniaturizzato
+                                    L'ideazione del circuito integrato si deve a Jack St. Clair Kilby, che nel 1958 ne
+                                    costruì il
+                                    primo esemplare.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina13.html"><img src="./img/explorer.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></A>
+                                      </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">1958</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Explorer 1</h4>
+                            <p class="description">
+                                <b>Il 28 gennaio 1958 la JPL (Jet Propulsion Laboratory) ha mandato nello spazio il
+                                    primo satellite americano, Explorer 1. Grazie a questo satellite si deve la scoperta
+                                    della cintura di Van Allen, una cintura di particelle cariche intrappolate nello
+                                    spazio dal campo magnetico terrestre.</b>
+
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina14.html"><img src="./img/corsa_nello_spazio_finale.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></A>
+                                      </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">Primi anni '80</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">La corsa nello spazio </h4>
+                            <p class="description">
+                                <b>Dalla corsa allo spazio con le missioni Apollo, ai nuovi razzi Falcon 9 della SpaceX
+                                    di Elon Musk ci sono stati molteplici cambiamenti, e nuove tecnologie sono state
+                                    scoperte.Dall’AGC al Falcon 9 in mezzo c’è stato un cambiamento radicale</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <a href="./relazioni/pagina15.html"><img src="./img/hyperloop.png"
+                                                                               style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                    </div>
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">2012-2021</span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Hyperloop</h4>
+                            <p class="description">
+                                <b>HyperLoop è un treno a levitazione magnetica che viaggia alla velocità di oltre mille
+                                    chilometri orari, questa idea fu lanciata da Elon Musk nel 2012. Questa idea non è
+                                    stata ancora completata al 100% ma fu collaudata nel 2020 facendo viaggiare due
+                                    persone.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="circle"><span>
+
+                                      <div class="anim">
+                                      <img src="./img/Neuralink_Musk_720.png"
+                                           style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img>
+                                    </div>
+
+
+                                    </span></div>
+                        <div class="content">
+                            <span class="year">FUTURO ... </span>
+                            <h4 class="title" style="font-family:caveat; font-size:40px">Neuralink</h4>
+                            <p class="description">
+                                <b>Neuralink è un'azienda di Elon Musk, Essa è un'azienda che si occupa di
+                                    Neurotecnologie, attualmente lo scopo è quello di riuscire a impiantare nel cervello
+                                    umano un bottone in modo da poter controllare gli impulsi del cervello e riuscire a
+                                    decifrare, ma lo scopo in futuro è riuscire a far comunicare il cervello con esso in
+                                    modo da poter scambiare dati e render così l’intera conoscenza umana a portata di
+                                    tutti.</b>
+                            </p>
+                            <div class="icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+        </div>
+    </div>
+</div>
 
 <br><br><br><br>
 
 
 <center>
-  <footer  style="background-color: rgb(206, 242, 253)";>
-    <font color="000000" size="5px" style="font-family:helvetica">  © Copyright 2021 </font>
-  </footer>
+    <footer ; style="background-color: rgb(206, 242, 253)">
+        <font color="000000" size="5px" style="font-family:helvetica"> © Copyright 2021 </font>
+    </footer>
 </center>
 
 
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>

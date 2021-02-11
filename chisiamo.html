@@ -1,98 +1,114 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
-  <head>
+<html dir="ltr" lang="it">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New+Rocker">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
 
-    <link rel="icon" type="image/ico" href="favicon.png"/>
+    <link href="favicon.png" rel="icon" type="image/ico"/>
 
     <title></title>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  </head>
-  <body style="background-color:rgb(255, 255, 255)">
+</head>
+<body style="background-color:rgb(255, 255, 255)">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family:Noto Sans KR; width:100%; min-width: 430px">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+     style="font-family:Noto Sans KR; width:100%; min-width: 430px">
 
-      <a class="navbar-brand" href="#" style="padding-left: 30px;">
-        <img src="./img/ms-icon-310x310.png" style="width: 50px; height:50px;" ></img>
+    <a class="navbar-brand" href="#" style="padding-left: 30px;">
+        <img src="./img/ms-icon-310x310.png" style="width: 50px; height:50px;"></img>
         La storia dell'Informatica
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" ><b>Argomenti</b></a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="relazioni/pagina1.html">1623 - Pascal</a>
-              <a class="dropdown-item" href="relazioni/pagina2.html">1763 - Comunicazione a distanza</a>
-              <a class="dropdown-item" href="relazioni/pagina3.html">1808 - Meucci</a>
-              <a class="dropdown-item" href="relazioni/pagina4.html">1815 - Ada Lovelace</a>
-              <a class="dropdown-item" href="relazioni/pagina5.html">1860/1870 - Schede Perforate</a>
-              <a class="dropdown-item" href="relazioni/pagina6.html">1874 - Guglielmo Marconi</a>
-              <a class="dropdown-item" href="relazioni/pagina7.html">1906 - Grace Hopper</a>
-              <a class="dropdown-item" href="relazioni/pagina8.html">1912 - Alan Turing</a>
-              <a class="dropdown-item" href="relazioni/pagina9.html">1939 - HP</a>
-              <a class="dropdown-item" href="relazioni/pagina10.html">1943 - Eniac</a>
-              <a class="dropdown-item" href="relazioni/pagina11.html">1955 - Steve Jobs</a>
-              <a class="dropdown-item" href="relazioni/pagina12.html">1958 - Circuiti integrati</a>
-              <a class="dropdown-item" href="relazioni/pagina13.html">1958 - Explorer 1</a>
-              <a class="dropdown-item" href="relazioni/pagina14.html">Primi anni '80 - La corsa nello spazio</a>
-              <a class="dropdown-item" href="relazioni/pagina15.html">2012-2021 - Hyperloop</a>
-              <a class="dropdown-item" href="relazioni/pagina16.html">FUTURO... - Neuralink</a>
-              <!-- <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#three">three</a> -->
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="chisiamo.html">Chi siamo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="crediti.html">Crediti</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                   role="button"><b>Argomenti</b></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="relazioni/pagina1.html">1623 - Pascal</a>
+                    <a class="dropdown-item" href="relazioni/pagina2.html">1763 - Comunicazione a distanza</a>
+                    <a class="dropdown-item" href="relazioni/pagina3.html">1808 - Meucci</a>
+                    <a class="dropdown-item" href="relazioni/pagina4.html">1815 - Ada Lovelace</a>
+                    <a class="dropdown-item" href="relazioni/pagina5.html">1860/1870 - Schede Perforate</a>
+                    <a class="dropdown-item" href="relazioni/pagina6.html">1874 - Guglielmo Marconi</a>
+                    <a class="dropdown-item" href="relazioni/pagina7.html">1906 - Grace Hopper</a>
+                    <a class="dropdown-item" href="relazioni/pagina8.html">1912 - Alan Turing</a>
+                    <a class="dropdown-item" href="relazioni/pagina9.html">1939 - HP</a>
+                    <a class="dropdown-item" href="relazioni/pagina10.html">1943 - Eniac</a>
+                    <a class="dropdown-item" href="relazioni/pagina11.html">1955 - Steve Jobs</a>
+                    <a class="dropdown-item" href="relazioni/pagina12.html">1958 - Circuiti integrati</a>
+                    <a class="dropdown-item" href="relazioni/pagina13.html">1958 - Explorer 1</a>
+                    <a class="dropdown-item" href="relazioni/pagina14.html">Primi anni '80 - La corsa nello spazio</a>
+                    <a class="dropdown-item" href="relazioni/pagina15.html">2012-2021 - Hyperloop</a>
+                    <a class="dropdown-item" href="relazioni/pagina16.html">FUTURO... - Neuralink</a>
+                    <!-- <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a> -->
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="chisiamo.html">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="crediti.html">Crediti</a>
+            </li>
 
         </ul>
-         <a href="https://google.com"> <img  class="form-inline my-2 my-lg-0" src="img/bandieraita.png" width="50" height="25"/></a>
-          <a href="https://google.com" style="padding-left: 10px"> <img  class="form-inline my-2 my-lg-0" src="img/bandiera inglesepng.png" widht="50" height="25" /></a>
-      </div>
-    </nav>
+        <a href="https://google.com"> <img class="form-inline my-2 my-lg-0" height="25" src="img/bandieraita.png"
+                                           width="50"/></a>
+        <a href="https://google.com" style="padding-left: 10px"> <img class="form-inline my-2 my-lg-0"
+                                                                      height="25" src="img/bandiera inglesepng.png"
+                                                                      widht="50"/></a>
+    </div>
+</nav>
 
-   <br> <br>
-    <p  style="color:rgb(0, 0, 0); font-size:50px; padding-left:10%; font-family:caveat;" >  <b> Chi siamo ? </b> </p>
-
-
-    <div class="shadow-sm p-3 mb-5 bg-white rounded" style="margin-left: 10%; margin-right: 10%; min-width: 400px">
-
-    <p style= "font-size:23px; padding-left:2.5%; padding-right:2.5%;font-family:Roboto" >Ciao a tutti siamo la 3A INFO dell'Itis Pininfarina a Moncalieri in provincia di Torino. <br><br> Nell'ambito del progetto PCTO ci è stato commissionato il compito di creare in una settimana un sito web sulla storia dell'informatica. <br><br> Abbiamo dunque deciso di dividerci il lavoro da fare: c'è chi si è occupato della scrittura del codice HTML, chi della parte grafica, chi della stesura degli argomenti e chi della traduzione in inglese.<br><br> Questo è il risultato finale arrivato dopo una settimana di duro lavoro e impegno, dove ci siamo ritrovati a dover creare un progetto da zero senza avere troppe indicazioni specifiche. Speriamo che il risultato vi piaccia e lo troviate interessante. <br> <br>
-      <b> 3A INFO</b> </p>          
-
-      </div>
+<br> <br>
+<p style="color:rgb(0, 0, 0); font-size:50px; padding-left:10%; font-family:caveat;"><b> Chi siamo ? </b></p>
 
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="shadow-sm p-3 mb-5 bg-white rounded" style="margin-left: 10%; margin-right: 10%; min-width: 400px">
 
-      <center>
-        <footer  style="background-color: lightblue; ">
-          <font color="000000" size="5px" style="font-family:helvetica">  © Copyright 2021 </font>
-        </footer>
-      </center>
-  </body>
+    <p style="font-size:23px; padding-left:2.5%; padding-right:2.5%;font-family:Roboto">Ciao a tutti siamo la 3A INFO
+        dell'Itis Pininfarina a Moncalieri in provincia di Torino. <br><br> Nell'ambito del progetto PCTO ci è stato
+        commissionato il compito di creare in una settimana un sito web sulla storia dell'informatica. <br><br> Abbiamo
+        dunque deciso di dividerci il lavoro da fare: c'è chi si è occupato della scrittura del codice HTML, chi della
+        parte grafica, chi della stesura degli argomenti e chi della traduzione in inglese.<br><br> Questo è il
+        risultato finale arrivato dopo una settimana di duro lavoro e impegno, dove ci siamo ritrovati a dover creare un
+        progetto da zero senza avere troppe indicazioni specifiche. Speriamo che il risultato vi piaccia e lo troviate
+        interessante. <br> <br>
+        <b> 3A INFO</b></p>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center>
+    <footer style="background-color: lightblue; ">
+        <font color="000000" size="5px" style="font-family:helvetica"> © Copyright 2021 </font>
+    </footer>
+</center>
+</body>
 
 </html>
