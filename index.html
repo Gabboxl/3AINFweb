@@ -25,7 +25,9 @@ html {
   scroll-behavior: smooth;
 }
 
+
 </style>
+
 
 </head>
   <body style="background-color:#ffffff">
@@ -89,20 +91,56 @@ html {
 
 
 
-
 <center><img src="./img/sfondosfumato3.png" style="width: 60%; height: 60%;"></img></center>
 
 
 
+<style>
+  .arrow{
+    position:relative;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    transform: rotate(0deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(0deg) translate(0px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(0deg) translate(0px,20px);
+    }
+}
+</style>
+
+
 <center><a class="btn btn-primary" href="#introduzione" role="button" style="position: relative; top: -120px; background-color:white; color: black;"> 
-  
-  <img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img>
+  <b> Clicca qui per scoprire la storia </b>
+</a>
 
-  <b> Scorri giù per scoprire la storia </b>
-  
-  <img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img>
+<div class="arrow">
+  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
+  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
+  <span><img src="simboli/arrow-down.svg" style="width:30px; height: 30px; color: white;"></img></span>
 
-</a></center>
+</div>
+</center>
 
 
             <div class="container">
@@ -111,6 +149,7 @@ html {
                   <h1>Introduzione al sito</h1>
                   <p> Su questo sito si parla della storia dell'Informatica: di tutte le figure importanti e delle principali invenzioni del passato e per finire c'è un accenno anche al futuro per coloro che sono affascinati da qual aspetto. <br><br> Qui di seguito possiamo trovare una linea del tempo con tutte le cose descritte in precedenza e per ognuno basta cliccare sulla foto per essere reindirizzati alla pagina specifica. <br><br> Speriamo possa essere interessante per tutti viaggiare tra questi anni di storia.
                   </p>
+
                 </div>
 
                 <br><br><br>
@@ -120,17 +159,17 @@ html {
                         <div class="main-timeline9">
                             <div class="timeline">
                                 <div class="timeline-content">
-                                    <div class="circle ">
-                                      <span>
+                                    <div class="circle " >
+                                      <span >
                                       
                                         <div class="anim">
-                                          <a href="relazioni/pagina1.html"><img src="./img/pascal.png" style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
+                                          <a href="relazioni/pagina1.html"  ><img src="./img/pascal.png"  style="z-index: 2; position:relative; width:158px; height: 158px; left:0px;  top:-14px; "> </img></a>
                                         </div>
 
                                       </span>
                                     </div>
                                     <div class="content">
-                                        <span class="year" style="font-family:Noto Sans KR;">1623</span>
+                                        <span class="year" style="font-family:Noto Sans KR;" >1623</span>
                                         <h4 class="title" style="font-family:caveat; font-size:40px">Pascal</h4>
                                         <p class="description" style="font-family:Noto Sans KR">
                                           <b>Blaise Pascal è stato un matematico, fisico e filosofo francese nato il 19 Giugno 1963 a Clermont Ferrand. È stato l’inventore della Pascalina.</b>
