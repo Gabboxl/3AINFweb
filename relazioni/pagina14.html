@@ -23,7 +23,7 @@
         <img src="../img/ms-icon-310x310.png" style="width: 50px; height:50px;" ></img>
         La storia dell'Informatica
       </a>
-      
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -110,7 +110,7 @@ Una manovra automatica, ben congegnata a livello software, che ha scongiurato il
             La capsula è in grado di trasportare persone e merci alla ISS e di tornare indietro in completa sicurezza. Ha 12 computer di bordo che ne controllano i vari motori e thruster.
             Essa attracca da sola alla ISS e in fase di ripartenza fa tutto da sola.
             All’interno ha 3 pannelli touch-screen che possono essere usati anche con la tuta spaziale che ha dei guanti speciali che lo permettono.
-            
+
          </div>
 
 
@@ -121,22 +121,22 @@ Una manovra automatica, ben congegnata a livello software, che ha scongiurato il
             Dopo diversi miglioramenti e dopo diversi razzi esplosi, ci fu il primo atterraggio riuscito, e da qui nacque il Falcon 9 v1.1, il quale computer era ancora più potente e riusciva ad compiere l’atterraggio senza farlo distruggere.
             Il software è progettato da un team di 32 persone che creano il codicesi basano molto sul c++ e sul suo ecosistema, ma usano anche programmi come LabVIEW, lo testano e lo migliorano.
             Il razzo è completamente autonomo e non necessita di personale di volo da terra per controllarlo, inoltre il software è in grado di rimediare ad un crash e ricalcolare traiettoria di volo, di atterraggio e tutto il resto in completa autonomia e in modo veloce. Ogni motore del razzo(9) ha 3 computer che regolano velocità e il resto, e contando gli altri computer di volo, ne abbiamo in totale 30.
-            
+
 
 
           </div>
         </div>
-        
+
         <div class="col" align="center">
 
           <div class="card" style="width: 75%;">
-            <img src="../img/anni80/saturn 5.png" class="card-img-top"> </img> 
+            <img src="../img/anni80/saturn 5.png" class="card-img-top"> </img>
             <div class="card-body">
               <p class="card-text"><b>Saturn 5</b></p>
             </div>
           </div>
-            
-          
+
+
         </div>
 
       </div>
@@ -144,7 +144,86 @@ Una manovra automatica, ben congegnata a livello software, che ha scongiurato il
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<Style>
+  button {
+    background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  outline:0;
+}
 
+svg {
+  padding: 13px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  left: 10%;
+}
+
+.right {
+  left: 90%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+ .piedipagina {
+   position: relative;
+   width: 100%;
+   height: 100px;
+   top: -70px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+  </style>
+
+<div class=piedipagina>
+<button class="arrow left">
+  <a href="pagina13.html"><svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+</svg></a>  <p style="font-family:caveat; font-size:30px">Relazione Precedente</p>
+</button>
+<button class="arrow right">
+  <a href="pagina15.html"><svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 "/>
+</svg></a> <p style="font-family:caveat; font-size:30px">Relazione Successiva</p>
+</button>
+</div>
 
 
 

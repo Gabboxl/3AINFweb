@@ -23,7 +23,7 @@
         <img src="../img/ms-icon-310x310.png" style="width: 50px; height:50px;" ></img>
         La storia dell'Informatica
       </a>
-      
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -102,7 +102,7 @@
         Alla fine del XVIII secolo Claude Chappe inventò un dispositivo meccanico composto da un'asta con due bracci più piccoli alle estremità. Queste aste potevano muoversi formando dei simboli che venivano ripetuti alla torre successiva fino ad arrivare a destinazione, successivamente la posizione delle aste veniva riconvertita in lettere e numeri.
         Inizialmente il telegrafo veniva usato per collegare Parigi con il resto della Francia.
 
-        
+
 
           </div>
 
@@ -114,19 +114,19 @@
           </div>
         </div>
 
-        
+
         <div class="col">
           <div class="shadow-sm p-3 mb-5 bg-white rounded" style="min-width: 400px">
             <h1>Il telegrafo ottico</h1>
             Nasce nel 1763, viene da una famiglia borghese, studia nel Collegio Reale di La Flèche e nel 1791 sviluppa insieme ai fratelli un sistema di comunicazione a distanza che verrà usato per scopi militari. Ha sùbito molto successo, infatti alcuni iniziano a dire di essere loro gli inventori del telegrafo, altri ne progettavano uno più efficiente. Chappe è già afflitto da una malattia depressiva e nel 1804 si suicida, in più nel 1846 il telegrafo ottico viene completamente sostituito con quello elettrico.
-            
+
           </div>
 
           <div class="shadow-sm p-3 mb-5 bg-white rounded" style="min-width: 400px">
             <h1>Il Telegrafo elettrico</h1>
             Le comunicazioni furono rivoluzionate quando nel 1837 Samuel Morse inventò il telegrafo elettrico che si diffuse in pochissimo tempo in tutti i continenti. Con questo nuovo sistema il mittente ed il ricevitore potevano comunicare distanze enormi, infatti bastava essere collegati da un cavo e le informazioni potevano essere trasformate in segnali ottici, acustici e meccanici. Morse inventò anche un codice che era composto da due simboli: il punto e la linea.Il codice Morse verrà usato fino al 1999 per le comunicazioni marittime quando verrà sostituito dai segnali digitali.
 
-            
+
           </div>
 
           <div class="card" style="width: 75%;">
@@ -135,19 +135,19 @@
               <p class="card-text" style="text-align:center"><b>Meucci</b></p>
             </div>
           </div>
-          
+
         </div>
 
 
         <div class="col" align="center">
 
           <div class="card" style="width: 75%;">
-            <img src="../img/meucci/meucci (1).jpg" class="card-img-top"> </img> 
+            <img src="../img/meucci/meucci (1).jpg" class="card-img-top"> </img>
             <div class="card-body">
               <p class="card-text"><b>Telegrafo elettrico & Telegrafo ottico</b></p>
             </div>
           </div>
-            
+
           <br><br>
 
           <div class="card" style="width: 75%;">
@@ -157,7 +157,7 @@
             </div>
           </div>
 
-         
+
 
         </div>
 
@@ -167,6 +167,86 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<Style>
+  button {
+    background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 13px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  left: 10%;
+}
+
+.right {
+  left: 90%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+ .piedipagina {
+   position: relative;
+   width: 100%;
+   height: 100px;
+   top: -70px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+  </style>
+
+<div class=piedipagina>
+<button class="arrow left">
+  <a href="pagina2.html"><svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+</svg></a>  <p style="font-family:caveat; font-size:30px">Relazione Precedente</p>
+</button>
+<button class="arrow right">
+  <a href="pagina4.html"><svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 "/>
+</svg></a> <p style="font-family:caveat; font-size:30px">Relazione Successiva</p>
+</button>
+</div>
 
 
 
