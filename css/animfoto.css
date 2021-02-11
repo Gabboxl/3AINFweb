@@ -1,4 +1,4 @@
-.anim div {
+ div.anim {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,11 +15,11 @@
     transition: 1s box-shadow;
   }
   
-.anim  div:hover {
+  div.anim:hover {
     box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
   }
   
-  .anim  div:hover::before, div:hover::after {
+div.anim:hover::before, div.anim:hover::after {
     display: block;
     content: '';
     position: absolute;
@@ -31,7 +31,7 @@
     animation: 5s clockwise infinite;
   }
   
-.anim div:hover:after {
+ div.anim:hover:after {
     background: #F3CE5E;
     animation: 2s counterclockwise infinite;
   }
