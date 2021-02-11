@@ -16,7 +16,7 @@
 .main-timeline9 .circle{width:180px;height:180px;border-radius:50%;background:#fff;border:8px solid #cca872;float:left;margin-right:25px;position:relative}
 .main-timeline9 .circle span:after,.main-timeline9 .circle span:before,.main-timeline9 .circle:before{content:"";margin:auto;position:absolute;right:-33px;bottom:0;z-index:-1}
 .main-timeline9 .circle:before{width:26px;height:30px;background:#cca872;top:0;box-shadow:inset 7px 0 9px -7px #444}
-.main-timeline9 .circle span{display:block;width:100%;height:100%;border-radius:50%;line-height:160px;border:3px solid #adabab;font-size:80px;color:#454344}
+.main-timeline9 .circle span{display:block;width:100%;height:100%;border-radius:50%;line-height:160px;border:3px solid #e5c28c;font-size:80px;color:#454344}
 .main-timeline9 .circle span:after,.main-timeline9 .circle span:before{width:28px;height:50px;background:#fff;border-radius:0 0 0 21px;top:-54px}
 .main-timeline9 .circle span:after{border-radius:21px 0 0;top:0;bottom:-56px}
 .main-timeline9 .content{display:table;padding-right:40px;position:relative}
