@@ -1,17 +1,13 @@
- div.anim {
-    display: flex;
+div.anim {
+
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 20px auto;
-    width: 250px;
-    height: 250px;
+
+    width: 158px;
+    height: 158px;
     background: white;
     border-radius: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    letter-spacing: 2px;
     transition: 1s box-shadow;
   }
   
@@ -19,19 +15,19 @@
     box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
   }
   
-div.anim:hover::before, div.anim:hover::after {
+  div.anim:hover::before, div.anim:hover::after {
     display: block;
     content: '';
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 162px;
+    height: 162px;
     background: #FDA8CF;
     border-radius: 100%;
-    z-index: -1;
+    z-index: 1;
     animation: 5s clockwise infinite;
   }
   
- div.anim:hover:after {
+  div.anim:hover:after {
     background: #F3CE5E;
     animation: 2s counterclockwise infinite;
   }
