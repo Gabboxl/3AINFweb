@@ -24,7 +24,7 @@ div.anim {
     background: #FDA8CF;
     border-radius: 100%;
     z-index: 1;
-    animation: 5s clockwise infinite;
+    animation: 1s clockwise infinite;
   }
   
   div.anim:hover:after {
