@@ -27,10 +27,9 @@
 
             scroll-behavior: smooth;
         }
-
-
     </style>
 
+<script src="js/cercanav.js"></script>
 
 </head>
 <body style="background-color:#ffffff">
@@ -87,17 +86,40 @@
             <li class="nav-item">
                 <a class="nav-link" href="crediti.html">Crediti</a>
             </li>
-
-
         </ul>
-        <a href="https://google.com"> <img class="form-inline my-2 my-lg-0" height="25" src="img/bandieraita.png"
+
+        <div class="dropdown form-inline my-2 my-lg-0" style="margin-right: 10px">
+            <input id="robainput" class="form-control mr-sm-2" type="search" placeholder="Cerca un argomento..." aria-label="Search" data-toggle="dropdown">
+                <span class="caret"></span></button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="relazioni/pagina1.html">1623 - Pascal</a>
+                <a class="dropdown-item" href="relazioni/pagina2.html">1763 - Comunicazione a distanza</a>
+                <a class="dropdown-item" href="relazioni/pagina3.html">1808 - Meucci</a>
+                <a class="dropdown-item" href="relazioni/pagina4.html">1815 - Ada Lovelace</a>
+                <a class="dropdown-item" href="relazioni/pagina5.html">1860/1870 - Schede Perforate</a>
+                <a class="dropdown-item" href="relazioni/pagina6.html">1874 - Guglielmo Marconi</a>
+                <a class="dropdown-item" href="relazioni/pagina7.html">1906 - Grace Hopper</a>
+                <a class="dropdown-item" href="relazioni/pagina8.html">1912 - Alan Turing</a>
+                <a class="dropdown-item" href="relazioni/pagina9.html">1939 - HP</a>
+                <a class="dropdown-item" href="relazioni/pagina10.html">1943 - Eniac</a>
+                <a class="dropdown-item" href="relazioni/pagina11.html">1955 - Steve Jobs</a>
+                <a class="dropdown-item" href="relazioni/pagina12.html">1958 - Circuiti integrati</a>
+                <a class="dropdown-item" href="relazioni/pagina13.html">1958 - Explorer 1</a>
+                <a class="dropdown-item" href="relazioni/pagina14.html">Primi anni '80 - La corsa nello spazio</a>
+                <a class="dropdown-item" href="relazioni/pagina15.html">2012-2021 - Hyperloop</a>
+                <a class="dropdown-item" href="relazioni/pagina16.html">FUTURO... - Neuralink</a>
+                <!-- <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a> -->
+            </div>
+        </div>
+
+        <a href="#"> <img class="form-inline my-2 my-lg-0" height="25" src="img/bandieraita.png"
                                            width="40"/></a>
         <a href="https://google.com" style="margin-left: 10px"> <img class="form-inline my-2 my-lg-0"
                                                                       height="25" src="img/bandiera_ing.png"
                                                                       width="40"/></a>
     </div>
 </nav>
-
 
 <center><img src="./img/sfondosfumato3.png" style="width: 60%; height: 60%;"></img></center>
 
@@ -141,7 +163,7 @@
 </style>
 
 
-<center><a class="btn btn-primary" href="#introduzione" role="button"
+<center><a class="btn btn-primary focus" href="#introduzione" role="button"
            style="position: relative; top: -120px; background-color:white; color: black;">
     <b> Clicca qui per scoprire la storia </b>
 </a>
@@ -156,8 +178,9 @@
 
 
 <div class="container">
+    <div id="introduzione" style="padding-bottom: 30px"></div>
 
-    <div class="shadow-sm p-3 mb-5 bg-white rounded" id="introduzione" style="margin-top: 2%;">
+    <div class="shadow-sm p-3 mb-5 bg-white rounded" style="margin-top: 2%;">
         <h1>Introduzione al sito</h1>
         <p> Su questo sito si parla della storia dell'Informatica: di tutte le figure importanti e delle principali
             invenzioni del passato e per finire c'è un accenno anche al futuro per coloro che sono affascinati da qual
