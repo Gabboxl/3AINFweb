@@ -15,6 +15,14 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet">
 
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+          <script crossorigin="anonymous"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="../js/cercanav.js"></script>
+
 </head>
 <body>
 
@@ -119,7 +127,18 @@
     <div class="row justify-content-md-center">
         <div class="col">
             <div class="shadow-sm p-3 mb-5 bg-white rounded" style="min-width: 400px">
-                <h1>Biografia</h1>
+                <h1>La storia</h1>
+                L’Eniac è considerato il primo computer elettronico general purpose della storia.
+La data di nascita del primo calcolatore risale al 1943, durante la Seconda Guerra Mondiale,
+quando il Governo americano subì una forte pressione al fine di realizzare una macchina da
+calcolo.
+Il calcolatore conosciuto con il nome di Eniac, Electronic Numerical Integrator and Calculator,
+doveva, perciò, essere capace di risolvere principalmente i problemi di calcolo balistico per il
+lancio dei proiettili d’artiglieria.
+Il progetto venne affidato a due scienziati, J. Mauchly e J. Eckert, che portarono a termine il
+lavoro progettando un computer che occupava una superficie di 180 metri quadrati e che
+pesava 30 tonnellate .La macchina era composta di soli circuiti elettronici, e gli unici
+elementi meccanici erano i lettori di schede per l’input e i 1500 relè associati.
 
             </div>
 
@@ -127,22 +146,49 @@
         </div>
         <div class="col">
             <div class="shadow-sm p-3 mb-5 bg-white rounded" style="min-width: 400px">
-                <h1>Invenzioni</h1>
+                <h1>Le caratteristiche</h1>
+
+                Per amplificare le onde radio di Eniac, gli scienziati pensarono di sfruttare le potenzialità
+della valvola termoionica, nata nel 1906, trasformandola in un velocissimo interruttore di
+circuiti.L'Eniac divenne così il primo strumento di calcolo senza parti meccaniche in
+movimento, ma costituito esclusivamente di circuiti elettronici.Pur essendo digitale, l’Eniac
+funzionava tramite sistema numerico decimale; infatti, la sua memoria poteva contenere
+solo 20 numeri di 10 cifre ciascuna e l’input era attivato da schede di carta perforate:
+riconosceva il segno di un numero, confrontava i numeri tra loro ed eseguiva di conseguenza
+le operazioni di addizione, sottrazione, radice quadrata, divisione e moltiplicazione.
+
 
 
             </div>
         </div>
 
-        <div align="center" class="col">
 
+        <div class="col">
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style="min-width: 400px">
+                <h1>La composizione dell' Eniac</h1>
+
+                L'ENIAC impiegava 18.000 valvole collegate da 500.000 contatti saldati manualmente, 1.500
+relèe dissipava in calore una potenza termica di circa 200 kW. Questo creava problemi di
+affidabilità perché il grande calore generato faceva bruciare le valvole con la frequenza di
+una ogni 2 minuti.Lo stress termico era maggiore soprattutto durante le fasi di accensione e
+di spegnimento del calcolatore per cui venne deciso di lasciarlo sempre in funzione.
+Realizzare l’eniac costò quasi 500.000 $
+
+                
+
+
+            </div>
 
             <div class="card" style="width: 75%;">
                 <img class="card-img-top" src="../img/eniac/ENIAC_page5_image1.png"> </img>
                 <div class="card-body">
-                    <p class="card-text"><b>Eniac</b></p>
+                    <p class="card-text" style="text-align:center"><b>Eniac</b></p>
                 </div>
             </div>
+
         </div>
+
+        
 
     </div>
 </div>
@@ -151,62 +197,58 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <style>
-    .arrow-left {
-        cursor: pointer;
-        height: 120px;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        transition: transform 0.1s;
-        width: 80px;
-    }
-    .arrow-left-bottom, .arrow-left-top {
-        background-color: #a2a2a2;
-        height: 4px;
-        left: -3px;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-    }
-    .arrow-left-bottom:after, .arrow-left-top:after {
-        background-color: #000000;
-        content: '';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        transition: all 0.15s;
-    }
-    .arrow-left-bottom {
-        transform: rotate(135deg);
-        transform-origin: top right;
-    }
-    .arrow-left-bottom:after {
-        left: 100%;
-        right: 0;
-        transition-delay: 0s;
-    }
-    .arrow-left-top {
-        transform: rotate(-135deg);
-        transform-origin: top right;
-    }
-    .arrow-left-top:after {
-        left: 0;
-        right: 100%;
-        transition-delay: 0.15s;
-    }
-    .arrow-left:hover .arrow-left-bottom:after {
-        left: 0;
-        transition-delay: 0.15s;
-    }
-    .arrow-left:hover .arrow-left-top:after {
-        right: 0;
-        transition-delay: 0s;
-    }
-    .arrow-left:active {
-        transform: translateX(-50%) translateY(-50%) scale(0.9);
+     button {
+        background: transparent;
+        -webkit-appearance: none;
+        border: 0;
+        outline: 0;
     }
 
+    svg {
+        padding: 13px;
+    }
+
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -45px;
+        margin-left: -35px;
+        width: 70px;
+        height: 90px;
+    }
+
+    .left {
+        left: 10%;
+    }
+
+    .right {
+        left: 90%;
+    }
+
+    .left:hover polyline,
+    .left:focus polyline {
+        stroke-width: 3;
+    }
+
+    .left:active polyline {
+        stroke-width: 6;
+        transition: all 100ms ease-in-out;
+    }
+
+    .right:hover polyline,
+    .right:focus polyline {
+        stroke-width: 3;
+    }
+
+    .right:active polyline {
+        stroke-width: 6;
+        transition: all 100ms ease-in-out;
+    }
+
+    polyline {
+        transition: all 250ms ease-in-out;
+    }
 
     .piedipagina {
         position: relative;
@@ -216,109 +258,43 @@
         right: 0;
         bottom: 0;
         left: 0;
-    }
 
-    /* classi per il posizionamento nella pagina */
-    .left {
-        left: 10%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+ 
 
-    }
-
-    .right {
-        left: 90%;
-    }
-
-
-
-    .arrow-right {
-        cursor: pointer;
-        height: 120px;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        transition: transform 0.1s;
-        width: 80px;
-    }
-    .arrow-right-top, .arrow-right-bottom {
-        background-color: #a2a2a2;
-        height: 4px;
-        left: -5px;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-    }
-    .arrow-right-top:after, .arrow-right-bottom:after {
-        background-color: #000000;
-        content: '';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        transition: all 0.15s;
-    }
-    .arrow-right-top {
-        transform: rotate(45deg);
-        transform-origin: bottom right;
-    }
-    .arrow-right-top:after {
-        left: 100%;
-        right: 0;
-        transition-delay: 0s;
-    }
-    .arrow-right-bottom {
-        transform: rotate(-45deg);
-        transform-origin: top right;
-    }
-    .arrow-right-bottom:after {
-        left: 0;
-        right: 100%;
-        transition-delay: 0.15s;
-    }
-    .arrow-right:hover .arrow-right-top:after {
-        left: 0;
-        transition-delay: 0.15s;
-    }
-    .arrow-right:hover .arrow-right-bottom:after {
-        right: 0;
-        transition-delay: 0s;
-    }
-    .arrow-right:active {
-        transform: translateX(-50%) translateY(-50%) scale(0.9);
-    }
-
+   
 
 </style>
 
 
 
-<div class="piedipagina">
-
-    <!-- freccia di sinistra -->
-    <div class="arrow-left left">
-        <div class="arrow-left-top"></div>
-        <div class="arrow-left-bottom"></div>
-    </div>
-
-
-    <!-- freccia di destra -->
-    <div class="arrow-right" style="left: 90%">
-        <div class="arrow-right-top"></div>
-        <div class="arrow-right-bottom"></div>
-    </div>
-
+<div class=piedipagina>
+    <button class="arrow left">
+        <a href="pagina9.html">
+            <svg height="80px" viewBox="0 0 50 80" width="60px" xml:space="preserve">
+    <polyline fill="none" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 " stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>
+        </a>
+        <p style="font-family:caveat; font-size:30px">Argomento precedente</p>
+    </button>
+    <button class="arrow right">
+        <a href="pagina11.html">
+            <svg height="80px" viewBox="0 0 50 80" width="60px" xml:space="preserve">
+    <polyline fill="none" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 " stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>
+        </a>
+        <p style="font-family:caveat; font-size:30px">Argomento successivo</p>
+    </button>
 </div>
 
 
 
 
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <center>
     <footer ; style="background-color: #d3f4ff">
         <font color="000000" size="5px" style="font-family:helvetica"> © Copyright 2021 </font>
